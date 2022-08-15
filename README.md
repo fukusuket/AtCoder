@@ -1,2 +1,1 @@
-# AtCoder
-# AtCoder
+# Template code for AtCoder
