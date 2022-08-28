@@ -1,20 +1,18 @@
-import main
+from main_c import func
 import unittest
 
 
 class MyTestCase(unittest.TestCase):
     def test_func1(self):
-        r = main.func(4, 10)
-        self.assertEqual(r, 3)
-
-    def test_func2(self):
-        r = main.func(8, 9)
-        self.assertEqual(r, 2)
-
-    def test_func3(self):
-        r = main.func(8, 8)
+        r = func(0, 0)
         self.assertEqual(r, 1)
 
+    def test_func2(self):
+        r = func(0, 0)
+        self.assertEqual(r, 1)
+
+
+class TestStdFunc(unittest.TestCase):
     def test_range(self):
         self.assertEqual([2, 3, 4], [x for x in range(2, 5)])
 
