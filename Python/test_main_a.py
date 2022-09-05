@@ -3,16 +3,7 @@ import unittest
 
 
 class MyTestCase(unittest.TestCase):
-
-    def test_1(self):
-        ans = func("Wednesday")
-        res = 3
-        self.assertEqual(res, ans)
-
-    def test_2(self):
-        ans = func("Monday")
-        res = 5
-        self.assertEqual(res, ans)
+    pass
 
 
 class TestStdFunc(unittest.TestCase):
