@@ -19,14 +19,20 @@ class TestStdFunc(unittest.TestCase):
     def test_format_zero_padding(self):
         self.assertEqual("01", format(1, "0>2"))
 
-    def test_index(self):
+    def test_list_index(self):
         data = [1, 2, 3, 4, 5, 6]
         self.assertEqual([1, 2], data[:2])
         self.assertEqual([2, 3, 4], data[1:4])
         self.assertEqual([4, 5, 6], data[-3:])
         self.assertEqual(6, data[-1])
         self.assertEqual(6, data.pop())
-        self.assertEqual([1,2,3,4,5], data)
+        self.assertEqual([1, 2, 3, 4, 5], data)
+
+    def test_list_step(self):
+        a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        b = [0, 2, 4, 6, 8]
+        self.assertEqual(a[::2], b)
+
 
 if __name__ == '__main__':
     unittest.main()
